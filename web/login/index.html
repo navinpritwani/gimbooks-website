@@ -1,0 +1,320 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>GST Invoice Maker | Login</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="icon" href="../../media/temporary/logo.png.html" type="image/png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../static/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../static/materialize/js/materialize.min.js"></script>
+    <!--Custom CSS for base html-->
+    <link type="text/css" rel="stylesheet" href="../../static/web/base/css/style.css" media="screen,projection"/>
+    
+    <script type="text/javascript" src="../../static/web/login/js/script-i=1613719119.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109982357-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109982357-1');
+    </script>
+    <!-- Hotjar Tracking Code for https://gimbooks.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1311743,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    
+    <link type="text/css" rel="stylesheet" href="../../static/web/button/style-i=1613719119.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../../static/web/login/css/style-i=1613719119.css" media="screen,projection"/>
+
+</head>
+<body>
+<header>
+    <div class="navbar-fixed">
+        <nav role="navigation">
+            <div class="nav-wrapper">
+
+
+
+
+
+                <ul class="left">
+                    <li><img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/logo.png" alt="Logo"/></li>
+                    <li><h5>Easy Invoice Manager</h5></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="../signup/index.html">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="loader">
+    <div id="circularG">
+        <div id="circularG_1" class="circularG"></div>
+        <div id="circularG_2" class="circularG"></div>
+        <div id="circularG_3" class="circularG"></div>
+        <div id="circularG_4" class="circularG"></div>
+        <div id="circularG_5" class="circularG"></div>
+        <div id="circularG_6" class="circularG"></div>
+        <div id="circularG_7" class="circularG"></div>
+        <div id="circularG_8" class="circularG"></div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 l8 offset-l2 offset-m2" id="col_login_form">
+                <div class="card z-depth-5">
+                    <div class="card-content center" id="card_content_logo">
+                        <img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/gimbooks.png">
+                        <h4>Welcome to Easy Invoice Manager</h4>
+                    </div>
+                    <div class="card-content center white-text" id="card_content_heading">
+                        <h5>LOGIN</h5>
+                    </div>
+                    <div class="card-content center">
+                        <form id="login_form">
+                            <input type="hidden" id="csrf_token" value="di3opN4czIn4m4zlJOx0cYk8SEBWRkb68UydlvDam5RWyE6AdkLDtpkGAe29iNB8">
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="mobile" name="mobile" type="text" class="validate" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                                    <label for="mobile">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="password" name="password" type="password" required>
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m12 l12">
+                                    <button class="btn" id="login_btn" onclick="loginSubmit(event)"><i class="material-icons right">send</i>Login</button>
+                                </div>
+                                <div class="col s12 m12 l12">
+                                    <div class="card z-depth-0">
+                                        <a onclick="openForgotPasswordForm()">Forgot Password ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <div class="card z-depth-0">
+                                    <div class="card-content">
+                                        Don't have an account ? <a href="../signup/index.html">Signup Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 l8 offset-l2 offset-m2" id="col_signup_form">
+                <div class="card z-depth-5">
+                    <div class="card-content center" id="card_content_logo">
+                        <img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/gimbooks.png">
+                        <h4>Welcome to Easy Invoice Manager</h4>
+                    </div>
+                    <div class="card-content center white-text" id="card_content_heading">
+                        <h5>SIGN UP</h5>
+                    </div>
+                    <div class="card-content center">
+                        <form id="sign_up_form">
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="reg_company_name" name="reg_company_name" type="text" class="validate" required>
+                                    <label for="reg_company_name">Company Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="reg_mobile" name="reg_mobile" type="text" class="validate" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                                    <label for="reg_mobile">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="reg_password" name="reg_password" type="password" required>
+                                    <label for="reg_password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="reg_cpassword" name="reg_cpassword" type="password" required>
+                                    <label for="reg_cpassword">Confirm Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m8 l8 offset-l2 offset-m2">
+                                    <input type="checkbox" class="filled-in" id="checkbox_referral" onchange="referralShowHide()" />
+                                    <label for="checkbox_referral">I have a referral registration code</label>
+                                </div>
+                            </div>
+                            <div class="row" id="row_referral_code">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">people</i>
+                                    <input id="referral_code" name="referral_code" type="text" required>
+                                    <label for="referral_code">Referral Code</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m12 l12">
+                                    <button class="btn" id="signup_btn" onclick="signupSubmit()"><i class="material-icons right">send</i>Signup</button>
+                                </div>
+                                <div class="col s12 m12 l12">
+                                    <div class="card z-depth-0">
+                                        Already have an account <a onclick="openLoginForm()">Login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 l8 offset-l2 offset-m2" id="col_otp_form">
+                <div class="card z-depth-5">
+                    <div class="card-content center" id="card_content_logo">
+                        <img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/gimbooks.png">
+                        <h4>Welcome to Easy Invoice Manager</h4>
+                    </div>
+                    <div class="card-content center white-text" id="card_content_heading">
+                        <h5>OTP</h5>
+                    </div>
+                    <div class="card-content center">
+                        <p class="grey-text text-darken-2">Enter OTP sent to your registered mobile.</p>
+                        <form id="otp_form">
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <input id="otp_mobile" name="otp_mobile" type="text" class="validate" maxlength="10" readonly>
+                                    <label for="otp_mobile" class="active">Mobile</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <input id="otp" name="otp" type="number" placeholder="Enter OTP" required>
+                                    <label for="otp">OTP</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m12 l12">
+                                    <button class="btn" id="otp_verify_btn" onclick="otpSubmit()"><i class="material-icons right">send</i>Verify</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 l8 offset-l2 offset-m2" id="col_forgot_password_form">
+                <div class="card z-depth-5">
+                    <div class="card-content center" id="card_content_logo">
+                        <img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/gimbooks.png">
+                        <h4>Welcome to Easy Invoice Manager</h4>
+                    </div>
+                    <div class="card-content center white-text" id="card_content_heading">
+                        <h5>Forgot Password ?</h5>
+                    </div>
+                    <div class="card-content center">
+                        <form id="forgot_password_form">
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input placeholder="Enter Mobile" id="forgot_mobile" name="forgot_mobile" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="validate" maxlength="10">
+                                    <label for="forgot_mobile">Mobile</label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <button class="btn" id="btn_forgot_password_proceed" onclick="forgotPasswordProceed()"><i class="material-icons right">send</i>Proceed</button>
+                            </div>
+                            <div class="col s12 m12 l12">
+                                <div class="card z-depth-0">
+                                    <a onclick="openLoginForm()">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 l8 offset-l2 offset-m2" id="col_otp_forgot_password">
+                <div class="card z-depth-5">
+                    <div class="card-content center" id="card_content_logo">
+                        <img src="https://gimbooks-media-prod-bucket.s3.ap-south-1.amazonaws.com/media/media/welcome/gimbooks.png">
+                        <h4>Welcome to Easy Invoice Manager</h4>
+                    </div>
+                    <div class="card-content center white-text" id="card_content_heading">
+                        <h5>Forgot Password ?</h5>
+                    </div>
+                    <div class="card-content center">
+                        <p class="grey-text text-darken-2">Please enter the OTP that we have send you.</p>
+                        <form id="otp_forgot_password_form">
+                            <input type="hidden" id="forgot_otp_mobile">
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">dialpad</i>
+                                    <input id="forgot_otp" name="forgot_otp" type="text" class="validate" maxlength="10">
+                                    <label for="forgot_otp">OTP</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="forgot_new_password" name="forgot_new_password" type="password" required>
+                                    <label for="forgot_new_password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m8 l8 offset-l2 offset-m2">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="forgot_new_cpassword" name="forgot_new_cpassword" type="password" required>
+                                    <label for="forgot_new_cpassword">Confirm Password</label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <button class="btn" id="btn_forgot_password_submit" onclick="submitForgotPassword()"><i class="material-icons right">send</i>Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_restrict_mobile_retailer" class="modal">
+        <div class="modal-content">
+            <h4>Message </h4>
+            <h5 id="alert-title"></h5>
+        </div>
+        <div class="modal-footer">
+            <a class="btn modal-action modal-close waves-effect waves-green">Ok</a>
+        </div>
+    </div>
+
+</body>
+</html>

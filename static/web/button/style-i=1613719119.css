@@ -1,0 +1,51 @@
+/******************************************************************/
+/*---------------------------------Button ------------------------*/
+/*******************************************************************/
+
+
+.btn, .btn-floating{
+    background-color: #654236 !important;
+    color: white;
+}
+
+.btn.small, .btn-floating.small{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 1.1rem;
+}
+
+.btn.white, .btn-floating.white{
+    background-color: white !important;
+    border: 1px solid #654236;
+    color: black;
+}
+
+.btn.white:hover, .btn-floating.white:hover{
+    background-color: #654236 !important;
+    color: #EFC849;
+}
+
+.btn:hover, .btn-floating:hover{
+    background-color: #654236 !important;
+    color: #EFC849;
+}
+
+button, input, optgroup, select, textarea{
+    color: inherit;
+    font: inherit;
+    margin-top: 13px;
+}
+#heading_notification
+{
+    padding: 5px;
+    background-color: #654236;
+}
+#heading_notification > h4{
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin: 0.1em 0;
+    font-size: 1.5em;
+}
+/******************************************************************/
+/*---------------------------------- Input ------------------------*/
+/*******************************************************************/

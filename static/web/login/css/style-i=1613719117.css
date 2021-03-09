@@ -1,0 +1,50 @@
+/******************************************************************/
+/*----------------------- login container ------------------------*/
+/*******************************************************************/
+
+div.container .row .col .card{
+    border-radius: 10px;
+}
+div.container .row .col .card .card-content{
+    padding: 10px;
+}
+div.container .row .col .card .card-content#card_content_heading{
+    background-color: #654236;
+    border-radius: 0;
+}
+div.container .row .col .card .card-content#card_content_heading h5{
+    font-size: 1.3rem;
+    margin: 0.1em 0;
+}
+div.container .row .col .card .card-content#card_content_logo{
+    /*border-bottom: 1px solid lightgrey;*/
+}
+div.container > .row > .col > .card > .card-content:nth-child(3) > p{
+    font-size: 15px;
+}
+div.container .row .col .card .card-content img{
+    height:100px;
+}
+div.container .row .col .card .card-content h4{
+    font-size: 2rem;
+}
+
+html{
+    overflow: auto !important;
+}
+
+#sign_up_form a,
+#col_forgot_password_form a,
+#col_login_form a{
+    cursor: pointer;
+}
+
+[type="checkbox"].filled-in:checked+label:after{
+    border: 2px solid #efc84b;
+    background-color: #efc84b;
+}
+
+
+#modal_restrict_mobile_retailer{
+
+}
